@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding:0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124
+}
+
+
+main {
+    margin-top: 5px; /*Margen hacia arriba*/
+    text-align: center;
+
+}
+
+main .main-logo {
+width: 530px;
+margin: 0 auto;
+margin-bottom: 20px; /*margen por la parte de abajo*/
+
+}
+
+main .main-logo img{
+    width: 370px;
+    height: 150px;
+}
+
+/*Para darle formato al icono de la barra de buscador*/
+main .main-input {
+    width:530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+
+}
+
+main .main-input-container {
+width: auto;
+max-width: 584;
+height:44px;
+border-radius: 100px;
+border: 1px solid rgb(212, 212, 212);
+display:flex;
+flex:1;
+justify-content:center;
+align-items: center;
+padding:5px 8px 0 14px;
+}
+
+/*Para darle formato al campo, o sea, a lo que va dentro de la barra de buscador*/
+
+main .main-input input {
+width:450px;
+height: 40px;
+border: none;
+outline: none; /*para quitar el contorno del borde cuando ponemos el puntero para escribir dentro del buscador*/
+margin:0;
+padding:0;
+color: rgba(0,0,0,.87);
+word-wrap: break-word;
+display:flex;
+-webkit-tap-highlight-color: transparent;
+font-size:16px;
+}
+
+/*Para hacer la sombra de la barra*/
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447; /*Esto es el tamaño de la sombra*/
+    border-color:#ddcdcdda; /*Hace que el marco se ensanche un poco más*/
+}
+
+/*Para agregar los iconos*/
+
+main .main-input .search-icon {
+    background-image:url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    line-height:20px;
+    text-decoration:none;
+    cursor:pointer;
+    margin-top:3px;
+    display:inline-block;
+    fill:currentColor;
+
+}
+
+main .main-input .micro-icon {
+    background-image:url('https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons button{
+    height:36px;
+    background-color: #f2f2f2;
+    border:1px solid #f8f9fa;
+    border-radius: 4px;
+    color:#3c4043;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    min-width:54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Para agregar la sombra de los botones*/
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #797980;
+    color:#202124;
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration:none; /*Con este codigo, la línea o la rayita del hipervinculo desaparece.*/
+    cursor:pointer; /*Sirve para cuando queremos que el cursor aparezca cada que señalamos lo q marcamos como hipervinculo.*/
+}
+
+
+/*Darle estilo a header*/
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex; /*Es para que la pantalla se vea flexible. Es decir, hace que el elemento pueda ser flexible y se puedan ajustar sus dimensiones*/
+    justify-content:flex-end; /*Es la justificación del contenido. "flex-end" significa que se incline hacia la derecha o hacia el final*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style:none; /*Sirve para quitar los bullets o las viñetas*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right:25px;
+    color:black;
+}
+
+nav .nav-right-section img{
+border-radius: 100px; /*Para que la imagen se haga redonda*/
+margin-left: 15px; /*Sirve para separarlo de la palabra "icono"*/
+width: 32px;
+height: 32px;
+}
+
+
+nav .nav-right-section .menu-icon {
+     background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+     background-repeat:no-repeat;
+     background-position: center;
+     background-size: contain;
+     width: 22px;
+     height: 22px;
+     text-decoration:none;
+     cursor:pointer;
+
+}
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Separa las listas en dos partes*/
+    align-items: center;
+    font-size:13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+    /*Agregar formato a las listas desordenadas*/
+
+    footer ul{
+        margin:10px;
+        list-style:none; /*Sirve para quitar las viñetas*/
+        display: flex;
+        padding-left: 0;
+    }
+
+    footer .footer-left{
+        justify-self: left;
+    }
+
+    footer .footer-right{
+        justify-self: right;
+    }
+
+    footer ul li a {
+        margin:10px;
+        color: #5f6368
+    }
